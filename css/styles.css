@@ -1,0 +1,55 @@
+:root{
+   ---black: #000000;
+   ---rose: #ebb7ce;
+   ---rosadark:#ffaabf;
+   ---white: #fff;
+   ---azul:#4682B4;
+   ---celese: #b6ffff;
+}
+.title{
+    text-align: center;
+    color: var(---black);
+    font-family: "Amita", serif;
+}
+.contenedor{
+    margin: 0  auto ;
+}
+.nav-bag{
+    background-color:var(---rose);
+
+}
+.menu-principal{
+     display: flex;
+     justify-content: space-evenly;
+
+}
+.menu-principal a {
+    color: var(---white);
+     text-decoration:none ;
+        font-weight: 500;
+        font-size: 1.3rem;    
+         padding: 1rem;
+     
+     }
+.menu-principal a:hover{
+    background-color: var(---rosadark);
+    color: var(---white);
+}
+
+
+@media (min-width: 100px) {
+    .menu-principal{
+        flex-direction: column;
+        
+    }
+    .menu-principal a{
+        font-size: 1rem;    
+        padding: 0.5rem;
+    }
+    
+}
+@media (min-width: 660px) {
+    .menu-principal{
+       flex-direction: row;
+    }
+}
